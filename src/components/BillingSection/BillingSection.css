@@ -1,0 +1,141 @@
+.billing-section-title {
+    width: 80px;
+    letter-spacing: 6px;
+    color: var(--darkGreen);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.billing-container {
+    border-radius: 20px;
+    background-color: var(--white);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.10);
+    padding: 24px;
+    max-width: 900px;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.standard-label {
+    font-size: 14px;
+    color: var(--darkGreen);
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.standard-input{
+    color: var(--darkGreen);
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: right;
+    color: var(--darkGreen);
+    background-color: var(--lightGreen);
+    border: none;
+    border-radius: 6px;
+}
+
+.standard-input-indicator{
+    position: absolute;
+    bottom: 8px;
+    left: 12px;
+    color: var(--darkGreen);
+    font-weight: 600;
+}
+
+.tip-options-container{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.tip-options{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 12px;
+    column-gap: 12px;
+}
+
+.tip-options button, .calculate-billing{
+    font-size: 20px;
+    color: var(--white);
+    font-weight: 600;
+    background-color: var(--darkGreen);
+    border: none;
+    border-radius: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+
+.tip-options button.selected{
+    background-color: var(--mediumGreen);
+    color: var(--darkGreen);
+}
+
+.calculate-billing{
+    margin-top: 24px;
+    width: 100%;
+}
+
+.billing-result-container{
+    background-color: var(--darkGreen);
+    padding: 24px;
+    border-radius: 16px;
+    margin-top: 24px;
+}
+
+.billing-result{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.billing-result:first-child{
+    margin-bottom: 24px;
+}
+
+.billing-result-heading{
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.billing-result-sub-heading{
+    color: var(--mediumGreen);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.billing-total{
+    color: var(--lightGreen);
+    font-weight: 600;
+    font-size: 28px;
+}
+
+@media screen and (min-width: 768px) {
+    .billing-container{
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .billing-form{
+        width: 50%;
+    }
+
+    .billing-result-container{
+        margin-top: 0;
+        width: 300px;
+    }
+
+    .tip-options{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
